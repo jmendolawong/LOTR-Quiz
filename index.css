@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merienda One', cursive;
+    font-size: 20px;
+}
+
+.stats {
+    text-align: center;
+}
+
+h1, .heading-container {
+    text-align: center;
+}
+
+ul.stats li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.lotr {
+    font-family: 'Berkshire Swash', cursive;
+    color: gold;
+    text-decoration: underline;
+}
+
+.quiz-question {
+    margin-top: 50px;
+}
