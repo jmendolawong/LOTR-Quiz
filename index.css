@@ -5,27 +5,39 @@
 body {
     font-family: 'Merienda One', cursive;
     font-size: 20px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
 }
 
 .stats {
-    text-align: center;
-}
-
-h1, .heading-container {
-    text-align: center;
-}
-
-ul.stats li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 25px;
+}
+
+.row {
+    text-align: center;
 }
 
 .lotr {
     font-family: 'Berkshire Swash', cursive;
     color: gold;
     text-decoration: underline;
+    font-size: 50px;
 }
 
 .quiz-question {
     margin-top: 50px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    text-align: center;
 }

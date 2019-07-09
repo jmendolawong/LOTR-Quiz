@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    <!-- Metadata - title of the browser window-->
         <title>Lord of the Rings Quiz</title>
+    <!-- Responsive viewport tag: tells small screens that it's responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- normalize.css, a cross browser reset file-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- stylesheets (index.css and google fonts)-->
         <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-       
-        <header>
-        <div class="stats-container">
-            <ul class="stats">
-                <li>Question: <span class="questionNumber">0</span>/10</li>
-                <li>Score: <span class="score">0</span></li>
-            </ul>
-        </div>
-
-
+        
+        <!--Navigation bar-->
+        <header role="banner">
+          <div class="row">
+            <div class="title header"><h1>Are you the <span class="lotr">Lord of the Rings</span>?</h1></div>
+            <div class="header stats"><strong>Question:</strong> <span class="questionNumber">0</span>/10</div>
+            <div class="header stats"><strong>Score: </strong><span class="score">0</span>/10</div>
+          </div>
         </header>
 
-        <main>
-            <div class="heading-container">
-                <h1>Are you the <span class="lotr">Lord of the Rings</span>?</h1>
-                <button type="button">Start!</button>
-            <div>
+        <main role="main">
+
+
+        <!-- Intro page-->
+            <section class="intro">
+                <p>Answer the questions to see if you have what it takes to free Middle Earth</p>
+                <a href="#"><img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Ferikkain%2Ffiles%2F2014%2F01%2Flotr-2.jpg" alt="Lord of the Rings background"></a>
+                <button type="button" class="btn">To Mordor!</button>
+            </section>
+        
+
+        <!--Question page-->
             <section class="quiz-question">
                 <div class="question">
                         Who created the ring?
                 </div>
-                <form class="answers">
-                    <label for="answer0">
-                        <input type="radio" class="answer with-gap" id="answer0" checked><span>Bilbo Baggins</span>
+                <form class="answer-form" id="answer-form" role="form">
+                    <label>
+                        <input type="radio" class="answer with-gap" required="true" name="answer-option" value="0"><span class="answer0">Bilbo Baggins</span>
                     </label>
-                    <label for="answer1">
-                        <input type="radio" class="answer with-gap" id="answer1" ><span>Sauron</span>
+                    <label>
+                        <input type="radio" class="answer with-gap" required="true" name="answer-option" value="1"><span class="answer1">Sauron</span>
                     </label>
-                    <label for="answer2">
-                        <input type="radio" class="answer with-gap" id="answer2" ><span>Saruman </span>
+                    <label>
+                        <input type="radio" class="answer with-gap" required="true" name="answer-option" value="2"><span class="answer2">Saruman </span>
                     </label>
-                    <label for="answer3">
-                        <input type="radio" class="answer with-gap" id="answer3" ><span>The Witch-King</span>
+                    <label>
+                        <input type="radio" class="answer with-gap" required="true" name="answer-option" value="3"><span class="answer3">The Witch-King</span>
                     </label>
                 </form>
+            </section>
 
+
+        <!--Correct Answer page-->
+            <section class="correct-answer-response">
+                <p>Correct! You're one step closer to Mordor!</p>
+                <a href="#"><img src="https://media.giphy.com/media/zGnnFpOB1OjMQ/giphy.gif" alt="Hobbits clapping"></a>
+                <button type="button" class="next-question btn">Next Question</button>
+            </section>
+
+
+        <!--Incorrect answer page-->
+            <section class="incorrect-answer-response">
+                <p>Gollum has led you astray. Incorrect!</p>
+                <p>The correct answer is : <span class="correct-answer"></span></p>
+                <a href="#"><img src="https://media.giphy.com/media/3oFyCUWAZCpJbNNgVa/source.gif" alt="LOTR disappointment"></a>
+                <button type="button" class="next-question btn">Next Question</button>
+            </section>
+
+        
+        <!--Final page: score and reset button-->
+            <section class="quiz-end">
+                <p>Congratulations. You were able to cast the ring into the fires of Mt. Doom!</p>
+                <a href="#"><img src="https://media.giphy.com/media/N6IpG6raQoyis/giphy.gif" alt="LOTR Celebration"></a>
+                <button type="reset" class="reset-btn btn">Start Over</button>
             </section>
 
         </main>
