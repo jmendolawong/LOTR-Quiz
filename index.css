@@ -41,3 +41,15 @@ body {
 section {
     text-align: center;
 }
+
+.intro-image{
+    width: 75%;
+}
+
+.answer{
+    display: block;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
