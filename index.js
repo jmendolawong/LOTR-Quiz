@@ -103,23 +103,27 @@ $('.next-question').click(e=>{
     quizNumber++;
     $('.incorrect-page').hide();
     $('.correct-page').hide();
-    quizNumber < 10 ? ($('.question-page').show(),
-    renderQuestion(quizNumber)) : $('.quiz-end').show();
+    quizNumber < 10 ? 
+        ($('.question-page').show(), renderQuestion(quizNumber)) : 
+        $('.quiz-end').show();
 });
 
 //Final page
 //Display the final page, display score,
 //If on reset click, reset quiz number and score
+//and update to the respective elements
 //hide final page and show intro page.
 $('.reset').click(e=>{
     quizNumber=0;
     score=0;
+    $('.questionNumber').text(quizNumber);
+    $('.score').text(score);
     $('.quiz-end').hide();
     $('.intro').show();
 });
 
 
-
+  
 /***Helper Functions ***/
 
 
