@@ -6,10 +6,31 @@ body {
     font-family: 'Merienda One', cursive;
     font-size: 20px;
     text-align: center;
+    background-image: url("http://getwallpapers.com/wallpaper/full/3/5/7/299899.jpg");
+    background-position: 0 -50px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main {
+
+}
+
+section {
+    text-align: center;
+    border: 3px black solid;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
 }
 
 .header {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .stats {
@@ -19,6 +40,7 @@ body {
 
 .row {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .lotr {
@@ -28,28 +50,23 @@ body {
     font-size: 50px;
 }
 
-.quiz-question {
-    margin-top: 50px;
+.question-page {
+    padding: 20px;
 }
 
 .btn {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 25px auto;
+    width: 25%;
 }
 
-section {
-    text-align: center;
-}
 
 .intro-image{
-    width: 75%;
+    width: 55%;
+    border-radius: 20px;
 }
 
 .answer{
     display: block;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
-}

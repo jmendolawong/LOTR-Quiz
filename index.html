@@ -19,11 +19,11 @@
         
         <!--Navigation bar-->
         <header role="banner">
-          <div class="row">
+        <div class="row">
             <div class="title header"><h1>Are you the <span class="lotr">Lord of the Rings</span>?</h1></div>
             <div class="header stats"><strong>Question:</strong> <span class="questionNumber">0</span>/10</div>
             <div class="header stats"><strong>Score: </strong><span class="score">0</span>/10</div>
-          </div>
+        </div>
         </header>
 
         <main role="main">
@@ -32,50 +32,54 @@
         <!-- Intro page-->
             <section class="intro">
                 <p>Answer the questions to see if you have what it takes to free Middle Earth</p>
-                <a href="#"><img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Ferikkain%2Ffiles%2F2014%2F01%2Flotr-2.jpg" alt="Lord of the Rings background" class="intro-image"></a>
-                <button type="button" class="btn">To Mordor!</button>
+                <input type="image" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Ferikkain%2Ffiles%2F2014%2F01%2Flotr-2.jpg" alt="Lord of the Rings ready" class="intro-image">
+                <button type="button" class="btn start-btn">To Mordor!</button>
             </section>
         
 
         <!--Question page-->
-            <section class="quiz-question">
+            <section class="question-page">
                 <div class="question">
                         Who created the ring?
                 </div>
                 <form class="answer-form" id="answer-form" role="form">
-                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="0"><span class="answer0">Bilbo Baggins</span></label>
-                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="1"><span class="answer1">Sauron</span></label>
-                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="2"><span class="answer2">Saruman </span></label>
-                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="3"><span class="answer3">The Witch-King</span></label>
+                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="0"><span class="answer0"></span></label>
+                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="1"><span class="answer1"></span></label>
+                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="2"><span class="answer2"></span></label>
+                    <label class="answer"><input type="radio" class="with-gap" required="true" name="answer-option" value="3"><span class="answer3"></span></label>
                 </form>
+                <button type="button" class="btn submit-answer">Submit</button>
             </section>
 
 
         <!--Correct Answer page-->
-            <section class="correct-answer-response">
+            <section class="correct-page">
                 <p>Correct! You're one step closer to Mordor!</p>
-                <a href="#"><img src="https://media.giphy.com/media/zGnnFpOB1OjMQ/giphy.gif" alt="Hobbits clapping" class="correct-image"></a>
-                <button type="button" class="next-question btn">Next Question</button>
+                <input type="image" src="https://media.giphy.com/media/zGnnFpOB1OjMQ/giphy.gif" alt="Hobbits clapping" class="correct-answer-image">
+                <button type="button" class="next-question btn">Continue on the journey</button>
             </section>
 
 
         <!--Incorrect answer page-->
-            <section class="incorrect-answer-response">
+            <section class="incorrect-page">
                 <p>Gollum has led you astray. Incorrect!</p>
                 <p>The correct answer is : <span class="correct-answer"></span></p>
-                <a href="#"><img src="https://media.giphy.com/media/3oFyCUWAZCpJbNNgVa/source.gif" alt="LOTR disappointment" class="feedback-image"></a>
-                <button type="button" class="next-question btn">Next Question</button>
+                <input type="image" src="https://media.giphy.com/media/3oFyCUWAZCpJbNNgVa/source.gif" alt="LOTR disappointment" class="feedback-image">
+                <button type="button" class="next-question btn">Continue on the journey</button>
             </section>
 
         
         <!--Final page: score and reset button-->
             <section class="quiz-end">
                 <p>Congratulations. You were able to cast the ring into the fires of Mt. Doom!</p>
-                <a href="#"><img src="https://media.giphy.com/media/N6IpG6raQoyis/giphy.gif" alt="LOTR Celebration" class="final-image"></a>
-                <button type="reset" class="reset-btn btn">Start Over</button>
+                <input type="image" src="https://media.giphy.com/media/N6IpG6raQoyis/giphy.gif" alt="LOTR Celebration" class="final-image">
+                <button type="reset" class="reset btn">Start Over</button>
             </section>
 
         </main>
 
-    </body>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>    
 </html>
